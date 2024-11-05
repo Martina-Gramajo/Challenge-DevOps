@@ -42,7 +42,6 @@ pipeline {
     post {
         always {
             echo 'Limpieza de contenedores y recursos temporales'
-            sh 'docker system prune -f'
         }
         success {
             echo 'Despliegue exitoso'
