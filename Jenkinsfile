@@ -34,7 +34,7 @@ pipeline {
         
         stage('Desplegar en el servidor') {
             steps {
-                    sh 'docker run -d -p 8081:80 ${DOCKER_IMAGE}'
+                    sh 'docker run -d -p 8082:3000 ${DOCKER_IMAGE}'
             }
         }
     }
